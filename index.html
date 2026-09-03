@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="五度易链产业数字化管理平台，数据与AI双引擎驱动数字化转型。">
+  <title>五度易链 | 全栈数智产品·智领科技未来</title>
+  <link rel="stylesheet" href="styles.css?v=20260903-4">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="brand-gradient" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#12d6d5" />
+        <stop offset="1" stop-color="#2373f5" />
+      </linearGradient>
+      <linearGradient id="blue-gradient" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#1679f5" />
+        <stop offset="1" stop-color="#2bd6e2" />
+      </linearGradient>
+      <symbol id="icon-brand" viewBox="0 0 56 56">
+        <path d="M28 3 48 14.5v27L28 53 8 41.5v-27L28 3Z" fill="none" stroke="url(#brand-gradient)" stroke-width="5" stroke-linejoin="round" />
+        <path d="m28 12 12 7v13.5L28 39l-12-6.5V19l12-7Z" fill="none" stroke="#1d8df1" stroke-width="4" stroke-linejoin="round" />
+        <path d="m28 12 12 7-12 7-12-7 12-7Z" fill="#c9f8f3" opacity=".9" />
+      </symbol>
+      <symbol id="icon-chevron" viewBox="0 0 20 20">
+        <path d="m5.5 7.5 4.5 4.5 4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 20 20">
+        <path d="M3 10h12M10 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M7.4 3.5 5 5.2c-.8.6-.9 1.7-.5 2.7 2.4 5.7 6 9.3 11.7 11.7 1 .4 2.1.2 2.7-.5l1.7-2.4c.4-.6.3-1.5-.3-2l-2.7-2.2c-.6-.5-1.5-.4-2 .2l-1 1.2c-2.1-1.1-3.5-2.5-4.6-4.6l1.2-1c.6-.5.7-1.4.2-2L9.4 3.8c-.5-.6-1.4-.7-2-.3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-database" viewBox="0 0 24 24">
+        <ellipse cx="12" cy="5" rx="7.5" ry="3" fill="none" stroke="currentColor" stroke-width="1.7" />
+        <path d="M4.5 5v7c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V5M4.5 12v7c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-7" fill="none" stroke="currentColor" stroke-width="1.7" />
+      </symbol>
+      <symbol id="icon-chart" viewBox="0 0 24 24">
+        <path d="M4 19V5m0 14h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+        <path d="m7 15 3-4 3 2 5-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="7" cy="15" r="1.2" fill="currentColor" /><circle cx="10" cy="11" r="1.2" fill="currentColor" /><circle cx="13" cy="13" r="1.2" fill="currentColor" /><circle cx="18" cy="7" r="1.2" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-ai" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.7" />
+        <path d="m8 16 2.2-6h1.6l2.2 6m-5-2h4M16.5 10v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="10.8" cy="10.8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <path d="m16 16 4.2 4.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-cube" viewBox="0 0 24 24">
+        <path d="m12 3 8 4.6v8.8L12 21l-8-4.6V7.6L12 3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+        <path d="m4 7.6 8 4.8 8-4.8M12 12.4V21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-research" viewBox="0 0 24 24">
+        <path d="M7 3.5h8l3 3v14H7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+        <path d="M15 3.5v4h3M10 12h5M10 15h5M10 18h3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path d="m8.5 7-5 5 5 5M15.5 7l5 5-5 5M13.5 4l-3 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-grid" viewBox="0 0 24 24">
+        <rect x="3.5" y="3.5" width="7" height="7" rx="2" fill="currentColor" /><rect x="13.5" y="3.5" width="7" height="7" rx="2" fill="currentColor" opacity=".76" /><rect x="3.5" y="13.5" width="7" height="7" rx="2" fill="currentColor" opacity=".76" /><rect x="13.5" y="13.5" width="7" height="7" rx="2" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="1.7" /><path d="M5 20c.8-3.5 3.1-5.5 7-5.5s6.2 2 7 5.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-message" viewBox="0 0 24 24">
+        <path d="M5 5.5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8l-4.5 3v-3H5a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+        <path d="M7.5 11.5h.1M12 11.5h.1M16.5 11.5h.1" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-top" viewBox="0 0 24 24">
+        <path d="M12 20V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-link" viewBox="0 0 24 24">
+        <path d="M10 14 14 10M8.1 17.9l-1.3 1.3a3.2 3.2 0 0 1-4.5-4.5l4-4a3.2 3.2 0 0 1 4.5 0M15.9 6.1l1.3-1.3a3.2 3.2 0 0 1 4.5 4.5l-4 4a3.2 3.2 0 0 1-4.5 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="五度易链首页">
+        <svg class="brand-mark" viewBox="0 0 56 56"><use href="#icon-brand"></use></svg>
+        <span class="brand-text"><strong>五度易链</strong><small>产业数字化管理平台</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="主导航">
+        <a class="nav-link active" href="https://www.datadowell.com/">首页</a>
+        <div class="nav-dropdown-wrap menu-products">
+          <a class="nav-link" href="products.html">产品矩阵</a>
+          <button class="dropdown-toggle" type="button" aria-label="展开产品矩阵" aria-expanded="false" aria-haspopup="true" aria-controls="product-menu">
+            <svg class="tiny-icon"><use href="#icon-chevron"></use></svg>
+          </button>
+          <div class="nav-dropdown" id="product-menu">
+            <a href="ai.html">「五度妙笔」AI智能报告生成专家</a>
+            <a href="qiyefenxi.html">「企业透视镜」企业全景分析报告</a>
+            <a href="api.html">「API商城」企业信息API接口平台</a>
+            <a href="cha.html">「五度易查」企业信息查询平台</a>
+            <a href="chanye.html">「产业大脑」产业智能分析平台</a>
+            <a href="zs.html">「智慧招商」产业数智招商平台</a>
+          </div>
+        </div>
+        <div class="nav-dropdown-wrap menu-solutions">
+          <a class="nav-link" href="shujuzhili.html">解决方案</a>
+          <button class="dropdown-toggle" type="button" aria-label="展开解决方案" aria-expanded="false" aria-haspopup="true" aria-controls="solution-menu">
+            <svg class="tiny-icon"><use href="#icon-chevron"></use></svg>
+          </button>
+          <div class="nav-dropdown" id="solution-menu">
+            <a href="shujuzhili.html">数据治理解决方案</a>
+            <a href="chanyelian.html">产业链上链解决方案</a>
+            <a href="zhaoshang.html">产业招商解决方案</a>
+          </div>
+        </div>
+        <a class="nav-link" href="case.html">项目案例</a>
+        <div class="nav-dropdown-wrap menu-insights">
+          <a class="nav-link" href="insights.html">行业观察</a>
+          <button class="dropdown-toggle" type="button" aria-label="展开行业观察" aria-expanded="false" aria-haspopup="true" aria-controls="insights-menu">
+            <svg class="tiny-icon"><use href="#icon-chevron"></use></svg>
+          </button>
+          <div class="nav-dropdown" id="insights-menu">
+            <a href="insights.html">产业资讯</a>
+            <a href="insights.html#reports">研究报告</a>
+          </div>
+        </div>
+        <div class="nav-dropdown-wrap menu-about">
+          <a class="nav-link" href="about.html">关于我们</a>
+          <button class="dropdown-toggle" type="button" aria-label="展开关于我们" aria-expanded="false" aria-haspopup="true" aria-controls="about-menu">
+            <svg class="tiny-icon"><use href="#icon-chevron"></use></svg>
+          </button>
+          <div class="nav-dropdown" id="about-menu">
+            <a href="about.html">公司介绍</a>
+            <a href="about.html#company-news">企业动态</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-tools">
+        <a href="https://ai.datadowell.com/" class="tool-link"><svg class="tiny-icon"><use href="#icon-link"></use></svg>五度妙笔</a>
+        <a href="https://ai.datadowell.com/business/0" class="tool-link"><svg class="tiny-icon"><use href="#icon-chart"></use></svg>企业透视镜</a>
+        <a href="https://api.datadowell.com/" class="tool-link"><svg class="tiny-icon"><use href="#icon-database"></use></svg>API商城</a>
+        <a class="phone-link" href="tel:01068321050"><svg class="tiny-icon"><use href="#icon-phone"></use></svg>010-68321050</a>
+        <a class="database-button" href="https://cha.datadowell.com/"><svg class="tiny-icon"><use href="#icon-database"></use></svg>数据库</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="hero-backdrop" aria-hidden="true">
+        <span class="hero-ray hero-ray-one"></span>
+        <span class="hero-ray hero-ray-two"></span>
+        <span class="hero-gridline"></span>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">DATA + AI · 数字化新引擎</p>
+          <h1>五度妙笔<br><em>AI智能报告新体验</em></h1>
+          <p class="hero-description">国内首选专业报告AI写作工具，智能生成可研报告、立项报告，让专业写作更高效。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="products.html">产品矩阵 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a>
+            <a class="button button-light" href="#contact">商务咨询</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="AI报告产品色块占位">
+          <div class="visual-screen screen-large"><span class="screen-bar"></span><span class="screen-line line-one"></span><span class="screen-line line-two"></span><span class="screen-chart"></span></div>
+          <div class="visual-screen screen-small"><span class="screen-bar"></span><span class="screen-line"></span><span class="screen-line line-two"></span></div>
+          <div class="visual-ring"></div>
+          <div class="visual-cube cube-one"></div>
+          <div class="visual-cube cube-two"></div>
+          <div class="visual-orb"><svg class="hero-icon"><use href="#icon-ai"></use></svg><span>AI</span></div>
+          <div class="visual-label">五度妙笔</div>
+        </div>
+      </div>
+      <div class="container metrics-row">
+        <div class="metric-card"><svg class="metric-icon"><use href="#icon-chart"></use></svg><strong>3.8亿<small>+</small></strong><span>企业实体数据</span></div>
+        <div class="metric-card"><svg class="metric-icon"><use href="#icon-cube"></use></svg><strong>120亿<small>+</small></strong><span>全量数据覆盖</span></div>
+        <div class="metric-card"><svg class="metric-icon"><use href="#icon-ai"></use></svg><strong>50<small>+</small></strong><span>专利与软著</span></div>
+        <div class="metric-card"><svg class="metric-icon"><use href="#icon-user"></use></svg><strong>50<small>+</small></strong><span>合作机构</span></div>
+      </div>
+    </section>
+
+    <section class="section product-section" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">PRODUCT MATRIX</p>
+          <h2>全栈数智产品·智领科技未来</h2>
+          <p>数据+AI双引擎驱动，深度赋能政府、园区及企业数字化转型与智能决策</p>
+        </div>
+        <div class="featured-products">
+          <article class="product-card featured-card selected" data-product="report">
+            <span class="product-badge">旗舰产品</span>
+            <div class="product-copy">
+              <h3>五度妙笔AI报告专家</h3>
+              <p>专业长文本报告AI写作工具<br>行研+数据+AI，铸就专业长文本生成能力</p>
+              <div class="tag-row"><span>AI写作</span><span>报告生成</span><span>智能分析</span></div>
+              <div class="card-actions"><a class="button button-primary small" href="#contact">申请试用 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a><a class="button button-outline small" href="ai.html">详情介绍 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div>
+            </div>
+          </article>
+          <article class="product-card featured-card" data-product="api">
+            <div class="product-copy">
+              <h3>企业信息API接口平台</h3>
+              <p>企业数据API一站式服务<br>数据全面优质，即接即用，降低数据接入成本</p>
+              <div class="tag-row"><span>API接口</span><span>数据服务</span></div>
+              <div class="card-actions"><a class="button button-primary small" href="#contact">申请试用 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a><a class="button button-outline small" href="api.html">详情介绍 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div>
+            </div>
+          </article>
+          <article class="product-card featured-card" data-product="insight">
+            <div class="product-copy">
+              <h3>企业透视镜</h3>
+              <p>智能生成企业全景分析报告<br>从数据达洞察，从表象见全貌，透视企业</p>
+              <div class="tag-row"><span>投资评估</span><span>供应商考察</span><span>竞争分析</span></div>
+              <div class="card-actions"><a class="button button-primary small" href="#contact">申请试用 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a><a class="button button-outline small" href="qiyefenxi.html">详情介绍 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div>
+            </div>
+          </article>
+        </div>
+        <div class="compact-products">
+          <article class="product-card compact-card" data-product="industry">
+            <div class="compact-icon"><svg><use href="#icon-chart"></use></svg></div>
+            <h3>产业分析平台</h3>
+            <p>产业经济智能分析与决策平台<br>产业经济全面感知、分析、研判、预警</p>
+            <div class="tag-row"><span>态势感知</span><span>运行监测</span></div>
+            <div class="card-actions"><a class="button button-primary small" href="#contact">申请试用 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a><a class="button button-outline small" href="chanye.html">详情介绍 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div>
+          </article>
+          <article class="product-card compact-card" data-product="investment">
+            <div class="compact-icon"><svg><use href="#icon-cube"></use></svg></div>
+            <h3>数智招商平台</h3>
+            <p>政府园区全链路智慧招商平台<br>精准锁定招商目标，全流程管控招商过程</p>
+            <div class="tag-row"><span>精准招商</span><span>产业匹配</span></div>
+            <div class="card-actions"><a class="button button-primary small" href="#contact">申请试用 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a><a class="button button-outline small" href="zs.html">详情介绍 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div>
+          </article>
+          <article class="product-card compact-card" data-product="research">
+            <div class="compact-icon"><svg><use href="#icon-research"></use></svg></div>
+            <h3>研究员工作台</h3>
+            <p>产业研究人员专属智能工作台<br>数据+工具+智能三位一体，提升研究效率</p>
+            <div class="tag-row"><span>研究辅助</span><span>协作分享</span></div>
+            <div class="card-actions"><a class="button button-primary small" href="#contact">申请试用 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div>
+          </article>
+          <article class="product-card compact-card" data-product="search">
+            <div class="compact-icon"><svg><use href="#icon-search"></use></svg></div>
+            <h3>企业查询平台</h3>
+            <p>专业的企业信息查询工具<br>提供全面、精准、实时的企业信息查询服务</p>
+            <div class="tag-row"><span>企业查询</span><span>信用评级</span></div>
+            <div class="card-actions"><a class="button button-primary small" href="#contact">申请试用 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a><a class="button button-outline small" href="cha.html">详情介绍 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section capabilities-section" id="capabilities">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">CORE CAPABILITIES</p>
+          <h2>四大核心能力·智赋高效决策</h2>
+          <p>聚合数据、AI、研发、业务全链路能力，打造从技术到业务的完整赋能体系</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card">
+            <div class="capability-header"><span class="capability-icon"><svg><use href="#icon-database"></use></svg></span><h3>数据能力</h3></div>
+            <div class="capability-body"><h4>构建全域精准、高效可用的产业数据底座</h4><p>拥有全生命周期数据管理体系和全链路数据治理能力，打造了百亿级产业、企业高质量数据集，具备千万级数据处理能力。</p><div class="capability-visual visual-cubes"><span></span><span></span><span></span></div></div>
+          </article>
+          <article class="capability-card">
+            <div class="capability-header"><span class="capability-icon"><svg><use href="#icon-ai"></use></svg></span><h3>AI能力</h3></div>
+            <div class="capability-body"><h4>打造垂直深耕、场景适配的智能决策引擎</h4><p>拥有专业算法模型、全流程智能体技术及 NLP 处理能力，可构建结构化产业、企业、技术知识图谱，全面支撑智能化分析与决策。</p><div class="capability-visual visual-ai"><span class="ai-letter">A</span><span class="ai-beam"></span></div></div>
+          </article>
+          <article class="capability-card">
+            <div class="capability-header"><span class="capability-icon"><svg><use href="#icon-code"></use></svg></span><h3>研发能力</h3></div>
+            <div class="capability-body"><h4>形成“行研+数据+算法+开发”复合型团队</h4><p>拥有产业研究、数据工程、算法建模、软件开发全栈能力，支持API封装、SaaS平台、私有化部署等多元化产品交付模式。</p><div class="capability-visual visual-code"><span>&lt;/&gt;</span><i></i><i></i></div></div>
+          </article>
+          <article class="capability-card">
+            <div class="capability-header"><span class="capability-icon"><svg><use href="#icon-grid"></use></svg></span><h3>业务能力</h3></div>
+            <div class="capability-body"><h4>深耕产业场景，将技术能力转化为业务价值</h4><p>拥有资深产业研究团队与全链路产业服务能力，精准适配于政府、园区及企业在产业分析、招商引智、决策支撑上的业务需求。</p><div class="capability-visual visual-business"><span></span><span></span><span></span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section solutions-section" id="solutions">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">SCENARIO SOLUTIONS</p>
+          <h2>一站式解决方案·智解业务需求</h2>
+          <p>聚焦政、园、企多领域多元化业务场景需求，提供专业的综合性定向解决方案</p>
+        </div>
+        <div class="solution-grid">
+          <article class="solution-card">
+            <div class="solution-visual solution-governance"><span class="solution-window"></span><span class="solution-link"></span><span class="solution-dot"></span></div>
+            <div class="solution-copy"><h3>数据治理解决方案</h3><p>为用户构建高质量产业数据底座，提供数据质量诊断、数据治理体系建设、数据标准化处理、数据管理平台建设的一站式数据治理服务，让数据“找得到、看得懂、用得上”。</p><div class="solution-meta"><span>政府</span><span>园区</span><span>大型企业</span></div><div class="card-actions"><a class="button button-primary small" href="#contact">咨询方案 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a><a class="button button-outline small" href="shujuzhili.html">详情介绍 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div></div>
+          </article>
+          <article class="solution-card">
+            <div class="solution-visual solution-chain"><span class="chain-ring"></span><span class="chain-arrow"></span><span class="chain-block"></span></div>
+            <div class="solution-copy"><h3>产业链上链解决方案</h3><p>以构建可视化产业链为目标，为用户提供产业链梳理、企业标准上链服务，实现产业链从“不可见”到“可见”再到“可分析”，为产业规划、招商引资提供精准导航。</p><div class="solution-meta"><span>政府</span><span>产业部门</span><span>园区</span></div><div class="card-actions"><a class="button button-primary small" href="#contact">咨询方案 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a><a class="button button-outline small" href="chanyelian.html">详情介绍 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div></div>
+          </article>
+          <article class="solution-card">
+            <div class="solution-visual solution-investment"><span class="investment-base"></span><span class="investment-bars"></span><span class="investment-cube"></span></div>
+            <div class="solution-copy"><h3>产业招商解决方案</h3><p>针对产业分析模糊、招商目标不明确、企业价值难评估等传统招商模式痛点，提供定方向、选对象、管过程全流程招商服务，实现招商目标精准锁定、全过程管控、决策数据化。</p><div class="solution-meta"><span>政府</span><span>招商部门</span><span>园区</span></div><div class="card-actions"><a class="button button-primary small" href="#contact">咨询方案 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a><a class="button button-outline small" href="zhaoshang.html">详情介绍 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section news-section" id="news">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <p class="section-kicker">NEWS & INSIGHTS</p>
+          <h2>最新资讯动态·智见产业趋势</h2>
+          <p>与您分享我们的成长与进步，为您传递最新产业热点新闻资讯</p>
+        </div>
+        <div class="news-grid">
+          <div class="news-column"><div class="news-column-title"><h3>企业动态</h3><a href="#news">查看全部动态 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div><article class="news-item"><div><h4>企业透视镜全新升级，智能生成企业全景分析报告</h4><p>从数据达洞察，从表象见全貌，透视企业。五度妙笔迎来版本迭代，产品能力持续升级。</p></div><time datetime="2026-07-23">2026-07-23</time></article><article class="news-item"><div><h4>五度妙笔AI报告专家全新上线，欢迎体验，免费试用</h4><p>行研、数据与AI能力融合，让长文本报告写作更专业、更高效。</p></div><time datetime="2026-07-23">2026-07-23</time></article></div>
+          <div class="news-column"><div class="news-column-title"><h3>产业资讯</h3><a href="#news">查看全部动态 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div><article class="news-item"><div><h4>鸿蒙生态开始算商业账</h4><p>界面新闻记者关注产业生态的新变化，技术创新正在加速业务价值释放。</p></div><time datetime="2026-08-31">2026-08-31</time></article><article class="news-item"><div><h4>数字化转型持续深入，产业智能化迎来新阶段</h4><p>数据基础设施与人工智能协同发展，为产业决策带来更多可能。</p></div><time datetime="2026-08-20">2026-08-20</time></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners-section" id="partners">
+      <div class="container">
+        <div class="section-heading"><p class="section-kicker">PARTNERS</p><h2>合作伙伴·聚力同行</h2><p>汇聚产业资源，共推行业进步，赋能生态发展</p></div>
+        <div class="partner-grid"><div class="partner-logo logo-red">北京经开区</div><div class="partner-logo logo-blue">中关村科技园</div><div class="partner-logo logo-green">产业合作伙伴</div><div class="partner-logo logo-orange">华为云</div><div class="partner-logo logo-navy">浪潮 INS PUR</div><div class="partner-logo logo-cyan">数据生态伙伴</div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <div class="container footer-grid">
+      <div class="footer-contact" id="contact"><h3>咨询服务热线：</h3><a class="footer-phone" href="tel:01068321050">010-68321050</a><p>（工作日09:00~18:00）</p><p>公司地址：北京市丰台区广安路9号国投财富广场1号楼12层</p><p>市场合作：info@datadowell.com</p><a class="button footer-button" href="mailto:info@datadowell.com">商务咨询 <svg class="button-icon"><use href="#icon-arrow"></use></svg></a></div>
+      <div class="footer-column"><h3>产品矩阵</h3><a href="#products">「五度妙笔」AI智能报告生成专家</a><a href="#products">「企业透视镜」企业全景分析报告</a><a href="#products">「API商城」企业信息API接口平台</a><a href="#products">「五度易查」企业信息查询平台</a><a href="#products">「产业大脑」产业智能分析平台</a><a href="#products">「智慧招商」产业数智招商平台</a></div>
+      <div class="footer-column"><h3>解决方案</h3><a href="shujuzhili.html">数据治理解决方案</a><a href="chanyelian.html">产业链上链解决方案</a><a href="zhaoshang.html">产业招商解决方案</a><h3 class="footer-subtitle">关于我们</h3><a href="about.html">公司介绍</a><a href="about.html#company-news">企业动态</a></div>
+      <div class="footer-column social-column"><h3>关注我们</h3><div class="qr-list"><div class="qr-item"><svg class="qr-code" viewBox="0 0 168 168" role="img" aria-label="专属客服号二维码"><rect width="168" height="168" fill="#fff"/><g fill="#193550"><rect x="8" y="8" width="56" height="56"/><rect x="16" y="16" width="40" height="40" fill="#fff"/><rect x="24" y="24" width="24" height="24"/><rect x="104" y="8" width="56" height="56"/><rect x="112" y="16" width="40" height="40" fill="#fff"/><rect x="120" y="24" width="24" height="24"/><rect x="8" y="104" width="56" height="56"/><rect x="16" y="112" width="40" height="40" fill="#fff"/><rect x="24" y="120" width="24" height="24"/><path d="M80 8h8v16h-8zM72 32h16v8H72zM96 40h8v16h-8zM72 56h8v16h-8zM88 64h16v8H88zM112 72h8v16h-8zM128 72h24v8h-24zM152 88h8v16h-8zM80 80h16v8H80zM72 96h8v16h-8zM88 96h24v8H88zM120 96h8v16h-8zM136 104h24v8h-24zM72 120h8v24h-8zM88 120h16v8H88zM104 128h8v16h-8zM120 120h16v8h-16zM144 128h8v24h-8zM80 152h24v8H80zM112 152h16v8h-16z"/></g></svg><span>专属客服号</span></div><div class="qr-item"><svg class="qr-code" viewBox="0 0 168 168" role="img" aria-label="微信订阅号二维码"><rect width="168" height="168" fill="#fff"/><g fill="#193550"><rect x="8" y="8" width="56" height="56"/><rect x="16" y="16" width="40" height="40" fill="#fff"/><rect x="24" y="24" width="24" height="24"/><rect x="104" y="8" width="56" height="56"/><rect x="112" y="16" width="40" height="40" fill="#fff"/><rect x="120" y="24" width="24" height="24"/><rect x="8" y="104" width="56" height="56"/><rect x="16" y="112" width="40" height="40" fill="#fff"/><rect x="24" y="120" width="24" height="24"/><path d="M72 8h16v8H72zM96 8h8v24h-8zM72 24h8v24h-8zM88 40h16v8H88zM112 72h16v8h-16zM136 72h8v16h-8zM152 80h8v24h-8zM80 64h8v24h-8zM96 72h8v16H96zM72 96h24v8H72zM104 96h16v16h-16zM128 96h8v8h-8zM144 112h16v8h-16zM72 112h8v16h-8zM88 112h16v8H88zM112 120h8v24h-8zM128 128h16v8h-16zM72 144h16v16H72zM96 144h24v8H96zM136 144h8v16h-8zM152 152h8v8h-8z"/></g></svg><span>微信订阅号</span></div></div></div>
+    </div>
+    <div class="container footer-bottom"><span>友情链接：</span><a href="#products">企业信息查询平台</a><a href="#products">企业信息查询API</a><a href="#products">智慧招商平台</a><a href="#products">AI智能报告专家</a><div class="copyright"><span>Copyright © 北京笃威尔数字技术有限公司 | 五度易链</span><a href="#top">京ICP备2021019355号-4</a><a href="#top">京公网安备11010602201153</a></div></div>
+  </footer>
+
+  <aside class="floating-rail" aria-label="快捷咨询">
+    <a class="rail-item rail-primary" href="#contact"><svg><use href="#icon-message"></use></svg><span>在线<br>咨询</span></a>
+    <a class="rail-item" href="#products"><svg><use href="#icon-ai"></use></svg><span>AI报告</span></a>
+    <a class="rail-item" href="tel:01068321050"><svg><use href="#icon-phone"></use></svg><span>电话咨询</span></a>
+    <a class="rail-item" href="#contact"><svg><use href="#icon-message"></use></svg><span>在线咨询</span></a>
+    <button class="rail-item rail-top" type="button" aria-label="回到顶部"><svg><use href="#icon-top"></use></svg></button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
